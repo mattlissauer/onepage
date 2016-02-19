@@ -1,0 +1,165 @@
+body {
+	background-color: #8f9779;
+	margin: 0 auto;
+	margin-top: 56px;
+	margin-left: 5px;
+	margin-left: 5px;
+	color: #f3f4f1;
+	font-family: "Lato", "Optima", "Arial", sans-serif;
+	font-size: 17px;
+	text-shadow: 1px 1px 1px #4d5d53;
+}
+
+h1 {
+	font-style: italic;
+}
+
+nav {
+	position: fixed;
+	background-color: #4d5d53;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	opacity: 0.9;
+	text-shadow: none;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav li {
+	font-size: 20px;
+	font-weight: 700;
+	vertical-align: top;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* top level menu */
+nav > ul > li {
+	display: inline-block;
+	padding: 0 30px;
+}
+
+/* sub menus */
+nav ul ul {
+	display: none;
+	position: fixed;
+	background-color: #4d5d53;
+	padding: 0 10px 7px 10px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul ul li {
+	/*display: none;*/
+	list-style-type: none;
+	font-size: .8em;
+}
+
+/* end submens */
+
+#menu-button {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+section {
+	margin-top: -50px;
+	padding-top: 50px;
+
+}
+
+.current {
+	text-decoration: underline;
+}
+
+#home {
+	min-height: 600px;
+}
+
+#about {
+	min-height: 300px;
+	padding: 10px; 
+	background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?crop=entropy&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300);
+}
+
+#coinbox {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 50px;
+}
+
+#rocket {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+}
+
+#projects {
+	/*height: 200px;*/
+}
+
+#resume {
+	/*height: 200px;	*/
+}
+
+/* change nav to "hamburger" on mobile */
+@media (max-width: 768px) {
+	/* 768px and down */
+	body {
+		margin: 10px 10px 10px;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	nav > ul > li {
+		display: block;
+	}
+	
+	#menu-button {
+		display: block;
+	}
+	
+	/* submenu */
+	nav ul ul {
+		position: static;
+	}
+
+	nav ul ul li {
+		font-size: .8em;
+		text-decoration: none;
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
