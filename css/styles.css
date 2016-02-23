@@ -149,12 +149,26 @@ section {
 }
 
 #projects {
+	height: 400px;
 	background-image: url(../images/background_projects.jpg);
 	padding-bottom: 20px;
 }
 
-#contact p {
-	text-align: center;
+#projects p {
+	margin-top: 0;
+}
+
+.projBox1 {
+	width: 50%;
+	padding-right: 10px;
+	float: left;
+	position: relative;
+}
+
+.projBox2 {
+	width: 50%;
+	float: left;
+	clear: right;
 }
 
 ul.contact {
@@ -232,16 +246,19 @@ ul.contact {
 		vertical-align: 300px;
 	}
 
+	#projects {
+		height: 700px;
+	}
+
+	.projBox1, .projBox2 {
+		width: 100%;
+		float: none;
+	}
+
+	#contact {
+		height: 100px;
+		margin-top: 0;
+		padding-top: 0;
+		border: 1px solid;
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
