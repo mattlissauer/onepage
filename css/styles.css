@@ -138,23 +138,27 @@ section {
 }
 
 #about {
-	background-image: url(../images/nyc.jpg);
+	background-image: url(../images/NYC_2.jpg);
+	background-size: 1500px;
 	margin-top: -35px;
 }
 
 #about {
 	min-height: 300px;
 	vertical-align: 300px;
-	border: 1px solid;
 }
 
 #projects {
 	background-image: url(../images/background_projects.jpg);
 	padding-bottom: 20px;
-	filter: sepia(1);
+}
+
+#contact p {
+	text-align: center;
 }
 
 ul.contact {
+	text-align: center;
 	padding: 0;
 }
 
